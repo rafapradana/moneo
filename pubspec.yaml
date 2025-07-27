@@ -70,6 +70,9 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
   
+  # Testing
+  mockito: ^5.4.4
+  
   # Code generation
   drift_dev: ^2.20.3
   build_runner: ^2.4.13

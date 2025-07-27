@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'constants/app_constants.dart';
 import 'constants/app_theme.dart';
+import 'config/supabase_config.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Supabase
+  await SupabaseConfig.initialize();
+
   runApp(const MoneoApp());
 }
 
