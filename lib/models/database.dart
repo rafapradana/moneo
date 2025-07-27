@@ -72,6 +72,9 @@ class RecurringTransactions extends Table {
 class MoneoDatabase extends _$MoneoDatabase {
   MoneoDatabase() : super(_openConnection());
 
+  // Constructor for testing with custom executor
+  MoneoDatabase.withExecutor(QueryExecutor executor) : super(executor);
+
   @override
   int get schemaVersion => 1;
 
